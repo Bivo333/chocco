@@ -10,5 +10,10 @@
   &--theme--white {
     background: #fff;
     color: $darkGreen;
+  
+    &:hover {
+      color: #fff;
+      background: $darkGreen;
+    }
   }
 }
