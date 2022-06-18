@@ -1,11 +1,24 @@
 .hero {
-  background:
-   url(../img/decor/chocolates.png) left 78% center no-repeat,
-   url(../img/decor/big-leaf.png) right bottom no-repeat;
+  background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: 650px; 
   color: #fff;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    bottom: -40px;
+    left: 2%;
+    content: url("../img/decor/corner-leaf.png");
+  }
+
+  &:after{
+    content: url("../img/decor/berries-and-leaves.png");
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
 }
 
 .hero__title-section {
@@ -18,6 +31,7 @@
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
+  background: url("../img/decor/chocolates.png") right center / 50% auto no-repeat;
 }
 
 .hero__main-title {
