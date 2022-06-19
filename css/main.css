@@ -256,12 +256,12 @@ img {
 }
 
 .headline__title {
-  margin: 100px 0 19px;
+  margin: 100px 0 13px;
 }
 
 .headline__subtitle {
-  padding: 0 38%;
-  margin-bottom: 49px;
+  padding: 0 30%;
+  margin-bottom: 43px;
 }
 
 .benefits {
@@ -275,13 +275,25 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 0 26px;
+  padding: 0 26px;
+  position: relative;
+}
+.benefits__item:before {
+  content: url("../img/decor/separator.png");
+  position: absolute;
+  top: 30px;
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 .benefits__item:first-child {
-  margin-left: 80px;
+  padding-left: 80px;
 }
 .benefits__item:last-child {
-  margin-right: 80px;
+  padding-right: 80px;
+}
+.benefits__item:last-child::before {
+  display: none;
 }
 
 .benefit {
@@ -296,7 +308,7 @@ img {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .benefit__icon {
@@ -313,5 +325,16 @@ img {
   font-size: 27px;
   font-weight: bold;
   color: #292929;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+}
+
+.benefits-section {
+  position: relative;
+  background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
+}
+.benefits-section:before {
+  content: url("../img/decor/bars-and-berries.png");
+  position: absolute;
+  bottom: -80px;
+  left: 0;
 }

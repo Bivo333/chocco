@@ -5,13 +5,26 @@
 
 .benefits__item {
   flex: 1;
-  margin: 0 26px;
+  padding: 0 26px;
+  position: relative;
+
+  &:before {
+    content: url("../img/decor/separator.png");
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);
+  }
 
   &:first-child {
-    margin-left: 80px;
+    padding-left: 80px;
   }
 
   &:last-child {
-    margin-right: 80px;
+    padding-right: 80px;
+
+    &::before {
+      display: none;
+    }
   }
 }
