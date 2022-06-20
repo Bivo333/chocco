@@ -2,23 +2,24 @@
   position: relative;
   background-image: url("../img/decor/bg-berries.png");
   background-size: cover;
+  color: $darkGreen;
   
   &:before {
     content: url("../img/decor/blueberry.png");
     position: absolute;
-    bottom: 69px;
-    left: 51px;
+    bottom: 57px;
+    left: 41px;
   }
   
   &:after {
     content: url("../img/decor/corner-leaf-2.png");
     position: absolute;
-    bottom: 58px;
-    right: 10px;
+    bottom: 46px;
+    right: 3px;
   }
 }
 
 .order-section .section__title {
   color: #365A49;
-  margin: 62px 0 59px;
+  margin: 58px 0 53px;
 }

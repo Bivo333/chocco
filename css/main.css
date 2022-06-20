@@ -218,6 +218,8 @@ img {
   border-radius: 100px;
   line-height: 1.1;
   text-decoration: none;
+  display: inline-block;
+  border: none;
 }
 .btn--theme--white {
   background: #fff;
@@ -226,6 +228,22 @@ img {
 .btn--theme--white:hover {
   color: #fff;
   background: #497870;
+}
+.btn--theme--green {
+  background: #497870;
+  color: #fff;
+}
+.btn--theme--green:hover {
+  color: #497870;
+  background: #fff;
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #497870;
+  text-transform: none;
+}
+.btn--theme--transparent:hover {
+  color: #000;
 }
 
 .section {
@@ -473,23 +491,24 @@ img {
   position: relative;
   background-image: url("../img/decor/bg-berries.png");
   background-size: cover;
+  color: #497870;
 }
 .order-section:before {
   content: url("../img/decor/blueberry.png");
   position: absolute;
-  bottom: 69px;
-  left: 51px;
+  bottom: 57px;
+  left: 41px;
 }
 .order-section:after {
   content: url("../img/decor/corner-leaf-2.png");
   position: absolute;
-  bottom: 58px;
-  right: 10px;
+  bottom: 46px;
+  right: 3px;
 }
 
 .order-section .section__title {
   color: #365A49;
-  margin: 62px 0 59px;
+  margin: 58px 0 53px;
 }
 
 .worktime-section {
@@ -500,8 +519,8 @@ img {
 .worktime-section:before {
   content: url("../img/decor/blackberry.png");
   position: absolute;
-  bottom: -101px;
-  right: 2px;
+  bottom: -111px;
+  right: -8px;
   z-index: 1;
 }
 
@@ -519,7 +538,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 27px;
+  margin-right: 41px;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -529,14 +548,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 17px;
+  margin-right: 27px;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -551,6 +570,7 @@ img {
 .form__input--textarea {
   height: 152px;
   resize: none;
+  margin-bottom: 20px;
 }
 .form__input:focus {
   border-color: #DEE2BD;
@@ -563,6 +583,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 17px;
 }
 
 .radio {
@@ -577,6 +598,7 @@ img {
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
+  margin-bottom: 28px;
 }
 .radio--checkbox .radio__visible:before {
   background: url("../img/icons/tick.png") center center no-repeat;
@@ -595,6 +617,7 @@ img {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
@@ -608,4 +631,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.radio__title {
+  margin-right: 23px;
 }
