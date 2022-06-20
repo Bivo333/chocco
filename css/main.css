@@ -265,19 +265,6 @@ img {
   margin-bottom: 43px;
 }
 
-.headline__reviews-title {
-  margin: 62px 0 32px;
-}
-
-.headline__order-title {
-  color: #365A49;
-  margin: 62px 0 83px;
-}
-
-.headline__worktime-title {
-  margin: 62px 0 30px;
-}
-
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,6 +436,10 @@ img {
   left: 1px;
 }
 
+.reviews-section .section__title {
+  margin: 62px 0 32px;
+}
+
 .interactive-avatar {
   width: 74px;
   height: 74px;
@@ -496,6 +487,11 @@ img {
   right: 10px;
 }
 
+.order-section .section__title {
+  color: #365A49;
+  margin: 62px 0 83px;
+}
+
 .worktime-section {
   position: relative;
   background: url("../img/decor/worktime-leaf.png") left 97px bottom 68px no-repeat, url("../img/decor/worktime-leaf-2.png") top 81px right 101px no-repeat;
@@ -507,4 +503,8 @@ img {
   bottom: -101px;
   right: 2px;
   z-index: 1;
+}
+
+.worktime-section .section__title {
+  margin: 62px 0 30px;
 }
