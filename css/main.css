@@ -85,10 +85,10 @@ img {
   position: relative;
 }
 .hero:before {
+  content: url("../img/decor/corner-leaf.png");
   position: absolute;
   bottom: -40px;
   left: 2%;
-  content: url("../img/decor/corner-leaf.png");
 }
 .hero:after {
   content: url("../img/decor/berries-and-leaves.png");
@@ -230,7 +230,7 @@ img {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  max-height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +266,16 @@ img {
 }
 
 .headline__reviews-title {
-  margin: 62px 0 54px;
+  margin: 62px 0 32px;
+}
+
+.headline__order-title {
+  color: #365A49;
+  margin: 62px 0 83px;
+}
+
+.headline__worktime-title {
+  margin: 62px 0 30px;
 }
 
 .benefits {
@@ -349,12 +358,26 @@ img {
   padding: 42px;
   margin-bottom: 15px;
   position: relative;
+  overflow: hidden;
 }
 .reviews__dysplay:before {
   content: url("../img/decor/side-raspberry.png");
   position: absolute;
   top: 22px;
   right: 0;
+}
+.reviews__dysplay:after {
+  content: "";
+  display: block;
+  width: 83px;
+  height: 83px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -61px;
 }
 
 .reviews__dysplay-inner {
@@ -412,6 +435,7 @@ img {
 .reviews-section {
   position: relative;
   background: url("../img/decor/strawberry.png") top 42px right 21px no-repeat;
+  z-index: 1;
 }
 .reviews-section:before {
   content: url("../img/decor/side-leaf-2.png");
@@ -422,6 +446,7 @@ img {
   content: url("../img/decor/strawberry-and-berries.png");
   position: absolute;
   bottom: -86px;
+  left: 1px;
 }
 
 .interactive-avatar {
@@ -451,4 +476,35 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.order-section {
+  position: relative;
+  background-image: url("../img/decor/bg-berries.png");
+  background-size: cover;
+}
+.order-section:before {
+  content: url("../img/decor/blueberry.png");
+  position: absolute;
+  bottom: 69px;
+  left: 51px;
+}
+.order-section:after {
+  content: url("../img/decor/corner-leaf-2.png");
+  position: absolute;
+  bottom: 58px;
+  right: 10px;
+}
+
+.worktime-section {
+  position: relative;
+  background: url("../img/decor/worktime-leaf.png") left 97px bottom 68px no-repeat, url("../img/decor/worktime-leaf-2.png") top 81px right 101px no-repeat;
+  background-color: #F8FAF9;
+}
+.worktime-section:before {
+  content: url("../img/decor/blackberry.png");
+  position: absolute;
+  bottom: -101px;
+  right: 2px;
+  z-index: 1;
 }

@@ -7,10 +7,10 @@
   position: relative;
 
   &:before {
+    content: url("../img/decor/corner-leaf.png");
     position: absolute;
     bottom: -40px;
-    left: 2%;
-    content: url("../img/decor/corner-leaf.png");
+    left: 2%;  
   }
 
   &:after{

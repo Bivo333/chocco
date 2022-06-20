@@ -3,12 +3,26 @@
   padding: 42px;
   margin-bottom: 15px;
   position: relative;
+  overflow: hidden;
   
   &:before {
     content: url("../img/decor/side-raspberry.png");
     position: absolute;
-     top: 22px;
-     right: 0;
+    top: 22px;
+    right: 0;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 83px;
+    height: 83px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -61px;
   }
 }
 

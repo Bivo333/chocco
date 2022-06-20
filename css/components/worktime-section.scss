@@ -1,0 +1,15 @@
+.worktime-section {
+  position: relative; 
+  background:
+    url("../img/decor/worktime-leaf.png") left 97px bottom 68px no-repeat,
+    url("../img/decor/worktime-leaf-2.png") top 81px right 101px no-repeat;
+  background-color: #F8FAF9;
+
+  &:before {
+    content: url("../img/decor/blackberry.png");
+    position: absolute;
+    bottom: -101px;
+    right: 2px;
+    z-index: 1;
+  }
+}

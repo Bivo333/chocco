@@ -1,0 +1,19 @@
+.order-section {
+  position: relative;
+  background-image: url("../img/decor/bg-berries.png");
+  background-size: cover;
+  
+  &:before {
+    content: url("../img/decor/blueberry.png");
+    position: absolute;
+    bottom: 69px;
+    left: 51px;
+  }
+  
+  &:after {
+    content: url("../img/decor/corner-leaf-2.png");
+    position: absolute;
+    bottom: 58px;
+    right: 10px;
+  }
+}
