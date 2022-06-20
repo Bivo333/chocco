@@ -265,6 +265,10 @@ img {
   margin-bottom: 43px;
 }
 
+.headline__reviews-title {
+  margin: 62px 0 54px;
+}
+
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,6 +347,14 @@ img {
 .reviews__dysplay {
   background: #F8FAF9;
   padding: 42px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.reviews__dysplay:before {
+  content: url("../img/decor/side-raspberry.png");
+  position: absolute;
+  top: 22px;
+  right: 0;
 }
 
 .reviews__dysplay-inner {
@@ -379,12 +391,37 @@ img {
 
 .reviews__text {
   margin-bottom: 25px;
+  margin-right: 100px;
 }
 
 .reviews__author {
   font-size: 18px;
   font-weight: bold;
   color: black;
+}
+
+.reviews__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-section {
+  position: relative;
+  background: url("../img/decor/strawberry.png") top 42px right 21px no-repeat;
+}
+.reviews-section:before {
+  content: url("../img/decor/side-leaf-2.png");
+  position: absolute;
+  bottom: -157px;
+}
+.reviews-section:after {
+  content: url("../img/decor/strawberry-and-berries.png");
+  position: absolute;
+  bottom: -86px;
 }
 
 .interactive-avatar {

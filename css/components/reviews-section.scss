@@ -1,0 +1,16 @@
+.reviews-section {
+  position: relative;
+  background: url("../img/decor/strawberry.png") top 42px right 21px no-repeat;
+
+  &:before {
+    content: url("../img/decor/side-leaf-2.png");
+    position: absolute;
+    bottom: -157px;
+  }
+
+  &:after {
+    content: url("../img/decor/strawberry-and-berries.png");
+    position: absolute;
+    bottom: -86px;
+  }
+}
