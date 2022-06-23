@@ -1,0 +1,20 @@
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+}
+
+.fixed-menu__item {
+  margin-bottom: 7px;
+}
+.fixed-menu__item--active .fixed-menu__item {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+}
